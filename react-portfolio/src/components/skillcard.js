@@ -1,20 +1,74 @@
-import React from 'react'
+import React, {Component} from "react";
+import ReactDOM from 'react-dom'
 
-function SkillCard(props){
-    return(
-        <div className="col s3">
-        <div className="card skillCard">
-            <div className="card-content">
-                <span className="card-title">Title</span>
+var flipped = false;
 
-                <p>{props.skill}</p>
-
-                <button className="skillBtn">{props.skill} Projects</button>
-            </div>
-
-        </div>
-        </div>
-    )
+function flipCard() {
+  if (!flipped) {
+    flipped = true;
+  } else {
+    flipped = false;
+  }
 }
 
+class SkillCard extends Component {
+    constructor(props){
+        super(props)
+
+        this.state = {
+            flipped: false,
+        };
+    
+
+        flipCard = () => {
+            if(this.state.flipped){
+                this.setState({flipped: false})
+            }
+            else{
+                this.setState({flipped:true})
+            }
+            
+        }
+        
+    }
+    
+    
+render(){
+  if (this.state.flipped) {
+    return (
+      <div className="col s3">
+        <div className="card skillCard">
+          <div className="card-content">
+            <span className="card-title">Projects using</span>
+            <ol>
+              <li>thing1</li>
+              <li>Thing2</li>
+              <li>Thing3</li>
+            </ol>
+            <button onClick={flipCard} className="skillBtn">
+              Back
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  } else {
+    return (
+      <div className="col s3">
+        <div className="card skillCard">
+          <div className="card-content">
+            <div className="sideOne">
+              <span className="card-title">Javascript!</span>
+
+              <button onClick={flipCard} className="skillBtn">
+                 Projects
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+}
 export default SkillCard;

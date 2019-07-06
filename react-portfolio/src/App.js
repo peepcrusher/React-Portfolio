@@ -5,8 +5,7 @@ function App() {
   return (
     <div>
       <div className="row">
-        <SkillCard 
-        skill= "Javascript"/>
+        <SkillCard />
       </div>
     </div>
   );
