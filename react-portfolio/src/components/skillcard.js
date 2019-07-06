@@ -7,7 +7,9 @@ function SkillCard(props){
             <div className="card-content">
                 <span className="card-title">Title</span>
 
-                <p>Javascript</p>
+                <p>{props.skill}</p>
+
+                <button className="skillBtn">{props.skill} Projects</button>
             </div>
 
         </div>

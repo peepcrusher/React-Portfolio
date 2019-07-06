@@ -12,7 +12,36 @@ code {
     monospace;
 }
 
-.skillCard:hover{
-cursor: pointer;
-box-shadow: 4px 4px rgba(0, 0, 0, 0.37);
+.skillBtn{
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 300px;
+  color: white;
+  background-color: black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 5px 10px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 6px #4b4c88;
+}
+
+.skillBtn:hover{
+  background-color:black;
+  box-shadow: 0 4px #4b4c88;
+  top: 2px;
+}
+
+.skillBtn:active{
+  background-color:black;
+  box-shadow: none;
+  top: 6px;
+}
+
+.skillBtn:focus{
+  background-color:black;
 }
