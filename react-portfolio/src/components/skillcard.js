@@ -45,7 +45,7 @@ render(){
               <li>Thing2</li>
               <li>Thing3</li>
             </ol>
-            <button onClick={flipCard} className="skillBtn">
+            <button onClick={flipCard} className="button">
               Back
             </button>
           </div>
@@ -60,7 +60,7 @@ render(){
             <div className="sideOne">
               <span className="card-title">Javascript!</span>
 
-              <button onClick={flipCard} className="skillBtn">
+              <button onClick={flipCard} className="button">
                  Projects
               </button>
             </div>

@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-.skillBtn{
+.button{
   outline: none;
   border: none;
   cursor: pointer;
@@ -30,19 +30,19 @@ code {
   box-shadow: 0 6px #4b4c88;
 }
 
-.skillBtn:hover{
+.button:hover{
   background-color:black;
   box-shadow: 0 4px #4b4c88;
   top: 2px;
 }
 
-.skillBtn:active{
+.button:active{
   background-color:black;
   box-shadow: none;
   top: 6px;
 }
 
-.skillBtn:focus{
+.button:focus{
   background-color:black;
 }
 
@@ -54,4 +54,12 @@ code {
 
 .blue{
   background-color:blue;
+}
+
+.red{
+  background-color:red;
+}
+
+.section-title{
+  text-align: center;
 }
