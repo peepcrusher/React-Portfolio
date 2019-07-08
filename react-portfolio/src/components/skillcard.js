@@ -36,7 +36,6 @@ class SkillCard extends Component {
 render(){
   if (this.state.flipped) {
     return (
-      <div className="col s3">
         <div className="card skillCard">
           <div className="card-content">
             <span className="card-title">Projects using</span>
@@ -50,11 +49,9 @@ render(){
             </button>
           </div>
         </div>
-      </div>
     );
   } else {
     return (
-      <div className="col s3">
         <div className="card skillCard">
           <div className="card-content">
             <div className="sideOne">
@@ -66,7 +63,6 @@ render(){
             </div>
           </div>
         </div>
-      </div>
     );
   }
 }

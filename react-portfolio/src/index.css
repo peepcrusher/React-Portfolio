@@ -30,6 +30,12 @@ code {
   box-shadow: 0 6px #4b4c88;
 }
 
+.skillCard{
+  display: inline-block;
+  height: 25vh;
+  width: 20vh;
+}
+
 .button:hover{
   background-color:black;
   box-shadow: 0 4px #4b4c88;
@@ -62,4 +68,11 @@ code {
 
 .section-title{
   text-align: center;
+  display: inline-block;
+}
+
+.scroll-button{
+  align-content: center;
+  position: relative;
+  top: 70vh;
 }
